@@ -1,0 +1,107 @@
+/* Variáveis */
+:root {
+    --color-header: #502274;
+    --color-body: #A42CD6;
+    --color-card: #C179B9;
+    
+    --color-dark: #2F242C;
+    
+    --color-text: #EEB4B3;
+    --font-family: 'Open Sans', sans-serif;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Configurando Body */
+body {
+    height: 100vh;
+    width: 100%;
+    
+    color: var(--color-text);
+    background-color: var(--color-body);
+    
+    font-family: var(--font-family);
+}
+
+/* Configurando Header */
+#header {
+    background-color: var(--color-header);
+    
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+/* Configurando Divisão do Perfil */
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* Arrumando Imagem de Perfil */
+#header img {
+    width: 80px;
+    margin: 10px;
+    margin-right: 30px;
+    
+    border-radius: 50%;
+    border: 1px solid var(--color-body);
+    padding: 3px;
+}
+/* Ajustando Textos */
+#header h1 {
+    font-size: 1rem;
+}
+#header h3 {
+    font-size: 12px;
+}
+
+/* Configurando Data(Relogio Digital) */
+#data {
+    display: flex;
+    flex-direction: row;
+    
+    width: 180px; 
+    height: 60px;
+    margin: 0 20px 0 0;
+    
+    background-color: var(--color-card);
+    border-radius: 5px;
+}
+/* Configurando divisão de cada categ( horas, mins...) */
+.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    padding-bottom: 5px;
+    
+    background-color: var(--color-dark);
+    border-radius: 3px;
+}
+/* Alinhando tudo ao centro */
+#header span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Tamanho do nomezinho( Horas, Minutos Segundos) */
+.tempo {
+    font-size: calc(100% - 8px);
+}
+/* Tamanho dos Números */
+.name {
+    font-size: 20px;
+}
